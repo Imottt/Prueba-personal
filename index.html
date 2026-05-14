@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico N°6</title>
+    <style>
+        table, th, td {
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+        #header {
+            background-color: #a8e6ab;
+        }
+        th, td {
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1><strong>Trabajo Práctico N°6</strong></h1>
+        <table>
+            <tr id="header">
+                <td colspan="2">Tablas</td>
+                <td colspan="3">Reglas</td>
+            </tr>
+            <tr>
+                <td>Padre</td>
+                <td>Hijo</td>
+                <td>Insercion</td>
+                <td>Modificacion</td>
+                <td>Eliminacion</td>
+            </tr>
+            <tr>
+                <td>Jugadores</td>
+                <td>Planillas</td>
+                <td><label for="insercion">
+                    <select id="insercion" name="insercion">
+                        <option value="permitida">Restringir</option>
+                        <option value="denegada">Ignorar</option>
+                    </select>
+                </label></td>
+                <td><label for="modificacion">
+                    <select id="modificacion" name="modificacion">
+                        <option value="permitida">Restringir</option>
+                        <option value="permitida">Cascada</option>
+                        <option value="denegada">Ignorar</option>
+                    </select></td>
+                <td><label for="Eliminacion">
+                    <select id="Eliminacion" name="Eliminacion">
+                        <option value="permitida">Restringir</option>
+                        <option value="permitida">Cascada</option>
+                        <option value="denegada">Ignorar</option></td>
+            </tr>
+        <td>Jugadores</td>
+        <td>Traspasos</td>
+        <td><label for="insercion2">
+            <select id="insercion2" name="insercion2">
+                <option value="permitida">Restringir</option>
+                <option value="denegada">Ignorar</option>
+            </select></td>
+        <td><label for="modificacion2">
+            <select id="modificacion2" name="modificacion2">
+                <option value="permitida">Restringir</option>
+                <option value="permitida">Cascada</option>
+                <option value="denegada">Ignorar</option>
+            </select></td>
+        <td><label for="Eliminacion2">
+            <select id="Eliminacion2" name="Eliminacion2">
+                <option value="permitida">Restringir</option>
+                <option value="permitida">Cascada</option>
+                <option value="denegada">Ignorar</option>
+            </select></td>
+    </tr>
+    <tr>
+        <td>Predios</td>
+        <td>Partidos</td>
+        <td><label for="insercion3">
+            <select id="insercion3" name="insercion3">
+                <option value="permitida">Restringir</option>
+                <option value="denegada">Ignorar</option>
+            </select></td>
+        <td><label for="modificacion3">
+            <select id="modificacion3" name="modificacion3">
+                <option value="permitida">Restringir</option>
+                <option value="permitida">Cascada</option>
+                <option value="denegada">Ignorar</option>
+            </select></td>
+        <td><label for="Eliminacion3">
+            <select id="Eliminacion3" name="Eliminacion3">
+                <option value="permitida">Restringir</option>
+                <option value="permitida">Cascada</option>
+                <option value="denegada">Ignorar</option>
+            </select></td>
+    </tr>
+        <td>Categorias</td>
+        <td>Torneos</td>
+        <td><label for="insercion4">
+            <select id="insercion4" name="insercion4">
+                <option value="permitida">Restringir</option>
+                <option value="denegada">Ignorar</option>
+            </select></td>
+        <td><label for="modificacion4">
+            <select id="modificacion4" name="modificacion4">
+                <option value="permitida">Restringir</option>
+                <option value="permitida">Cascada</option>
+                <option value="denegada">Ignorar</option>
+            </select></td>
+        <td><label for="Eliminacion4">
+            <select id="Eliminacion4" name="Eliminacion4">
+                <option value="permitida">Restringir</option>
+                <option value="permitida">Cascada</option>
+                <option value="denegada">Ignorar</option>
+            </select></td>
+</table>
+    <a>
+    </a>
+</body>
+</html>
