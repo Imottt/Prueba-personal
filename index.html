@@ -16,19 +16,19 @@
             padding: 5px;
             text-align: center;
         }
-        #si {
-            background-color: #eec77e;
+        #header2{
+            background-color: gold;
         }
     </style>
 </head>
 <body>
     <h1><strong>Trabajo Práctico N°6</strong></h1>
-        <table>
+        <table style="width:100%">
             <tr id="header">
                 <td colspan="2">Tablas</td>
                 <td colspan="3">Reglas</td>
             </tr>
-            <tr id="si">
+            <tr id="header2">
                 <td>Padre</td>
                 <td>Hijo</td>
                 <td>Insercion</td>
@@ -36,8 +36,8 @@
                 <td>Eliminacion</td>
             </tr>
             <tr>
-                <td>Jugadores</td>
-                <td>Planillas</td>
+                <td>Premio-grupales</td>
+                <td>Premios-Equipos</td>
                 <td><label for="insercion">
                     <select id="insercion" name="insercion">
                         <option value="permitida">Restringir</option>
@@ -56,8 +56,8 @@
                         <option value="permitida">Cascada</option>
                         <option value="denegada">Ignorar</option></td>
             </tr>
-        <td>Jugadores</td>
-        <td>Traspasos</td>
+        <td>Premios-Individual</td>
+        <td>Premios-Jugadores</td>
         <td><label for="insercion2">
             <select id="insercion2" name="insercion2">
                 <option value="permitida">Restringir</option>
@@ -77,8 +77,8 @@
             </select></td>
     </tr>
     <tr>
-        <td>Predios</td>
         <td>Partidos</td>
+        <td>Resultados</td>
         <td><label for="insercion3">
             <select id="insercion3" name="insercion3">
                 <option value="permitida">Restringir</option>
@@ -97,8 +97,9 @@
                 <option value="denegada">Ignorar</option>
             </select></td>
     </tr>
-        <td>Categorias</td>
-        <td>Torneos</td>
+
+        <td>Predios</td>
+        <td>Partidos</td>
         <td><label for="insercion4">
             <select id="insercion4" name="insercion4">
                 <option value="permitida">Restringir</option>
@@ -116,8 +117,491 @@
                 <option value="permitida">Cascada</option>
                 <option value="denegada">Ignorar</option>
             </select></td>
+        <tr>
+            <td>Partidos</td>
+            <td>Planillas</td>
+            <td><label for="insercion5">
+                <select id="insercion5" name="insercion5">
+                    <option value="permitida">Restringir</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="modificacion5">
+                <select id="modificacion5" name="modificacion5">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="Eliminacion5">
+                <select id="Eliminacion5" name="Eliminacion5">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Equipos</td>
+            <td>Traspasos</td>
+            <td><label for="insercion6">
+                <select id="insercion6" name="insercion6">
+                    <option value="permitida">Restringir</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="modificacion6">
+                <select id="modificacion6" name="modificacion6">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="Eliminacion6">
+                <select id="Eliminacion6" name="Eliminacion6">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Equipos</td>
+            <td>Planillas</td>
+            <td><label for="insercion7">
+                <select id="insercion7" name="insercion7">
+                    <option value="permitida">Restringir</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="modificacion7">
+                <select id="modificacion7" name="modificacion7">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="Eliminacion7">
+                <select id="Eliminacion7" name="Eliminacion7">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Equipos</td>
+            <td>Entrenadores</td>
+            <td><label for="insercion8">
+                <select id="insercion8" name="insercion8">
+                    <option value="permitida">Restringir</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="modificacion8">
+                <select id="modificacion8" name="modificacion8">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="Eliminacion8">
+                <select id="Eliminacion8" name="Eliminacion8">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Equipos</td>
+            <td>Tabla_de_posiciones</td>
+            <td><label for="insercion9">
+                <select id="insercion9" name="insercion9">
+                    <option value="permitida">Restringir</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="modificacion9">
+                <select id="modificacion9" name="modificacion9">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="Eliminacion9">
+                <select id="Eliminacion9" name="Eliminacion9">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Temporadas</td>
+            <td>Fechas</td>
+            <td><label for="insercion10">
+                <select id="insercion10" name="insercion10">
+                    <option value="permitida">Restringir</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="modificacion10">
+                <select id="modificacion10" name="modificacion10">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="Eliminacion10">
+                <select id="Eliminacion10" name="Eliminacion10">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Temporadas</td>
+            <td>Grupos</td>
+            <td><label for="insercion11">
+                <select id="insercion11" name="insercion11">
+                    <option value="permitida">Restringir</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="modificacion11">
+                <select id="modificacion11" name="modificacion11">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="Eliminacion11">
+                <select id="Eliminacion11" name="Eliminacion11">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Torneos</td>
+            <td>Temporadas</td>
+            <td><label for="insercion12">
+                <select id="insercion12" name="insercion12">
+                    <option value="permitida">Restringir</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="modificacion12">
+                <select id="modificacion12" name="modificacion12">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="Eliminacion12">
+                <select id="Eliminacion12" name="Eliminacion12">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Temporadas</td>
+            <td>Tabla_de_posiciones</td>
+            <td><label for="insercion13">
+                <select id="insercion13" name="insercion13">
+                    <option value="permitida">Restringir</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="modificacion13">
+                <select id="modificacion13" name="modificacion13">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="Eliminacion13">
+                <select id="Eliminacion13" name="Eliminacion13">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Torneos</td>
+            <td>Traspasos</td>
+            <td><label for="insercion14">
+                <select id="insercion14" name="insercion14">
+                    <option value="permitida">Restringir</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="modificacion14">
+                <select id="modificacion14" name="modificacion14">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="Eliminacion14">
+                <select id="Eliminacion14" name="Eliminacion14">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Categorias</td>
+            <td>Torneos</td>
+            <td><label for="insercion15">
+                <select id="insercion15" name="insercion15">
+                    <option value="permitida">Restringir</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="modificacion15">
+                <select id="modificacion15" name="modificacion15">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="Eliminacion15">
+                <select id="Eliminacion15" name="Eliminacion15">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Tipo_de_torneos</td>
+            <td>Torneos</td>
+            <td><label for="insercion16">
+                <select id="insercion16" name="insercion16">
+                    <option value="permitida">Restringir</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="modificacion16">
+                <select id="modificacion16" name="modificacion16">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="Eliminacion16">
+                <select id="Eliminacion16" name="Eliminacion16">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Grupos</td>
+            <td>Partidos</td>
+            <td><label for="insercion17">
+                <select id="insercion17" name="insercion17">
+                    <option value="permitida">Restringir</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="modificacion17">
+                <select id="modificacion17" name="modificacion17">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="Eliminacion17">
+                <select id="Eliminacion17" name="Eliminacion17">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Grupos</td>
+            <td>Tabla_de_posiciones</td>
+            <td><label for="insercion18">
+                <select id="insercion18" name="insercion18">
+                    <option value="permitida">Restringir</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="modificacion18">
+                <select id="modificacion18" name="modificacion18">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="Eliminacion18">
+                <select id="Eliminacion18" name="Eliminacion18">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Jugadores</td>
+            <td>Planillas</td>
+            <td><label for="insercion19">
+                <select id="insercion19" name="insercion19">
+                    <option value="permitida">Restringir</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="modificacion19">
+                <select id="modificacion19" name="modificacion19">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="Eliminacion19">
+                <select id="Eliminacion19" name="Eliminacion19">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Jugadores</td>
+            <td>Traspasos</td>
+            <td><label for="insercion20">
+                <select id="insercion20" name="insercion20">
+                    <option value="permitida">Restringir</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="modificacion20">
+                <select id="modificacion20" name="modificacion20">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="Eliminacion20">
+                <select id="Eliminacion20" name="Eliminacion20">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Registro_participacion</td>
+            <td>Premios_jugadores</td>
+            <td><label for="insercion21">
+                <select id="insercion21" name="insercion21">
+                    <option value="permitida">Restringir</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="modificacion21">
+                <select id="modificacion21" name="modificacion21">  
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="Eliminacion21">
+                <select id="Eliminacion21" name="Eliminacion21">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Jugadores</td>
+            <td>Registro_participacion</td>
+            <td><label for="insercion22">
+                <select id="insercion22" name="insercion22">
+                    <option value="permitida">Restringir</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="modificacion22">
+                <select id="modificacion22" name="modificacion22">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="Eliminacion22">
+                <select id="Eliminacion22" name="Eliminacion22">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Equipos</td>
+            <td>Registro_participacion</td>
+            <td><label for="insercion23">
+                <select id="insercion23" name="insercion23">
+                    <option value="permitida">Restringir</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="modificacion23">
+                <select id="modificacion23" name="modificacion23">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="Eliminacion23">
+                <select id="Eliminacion23" name="Eliminacion23">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Temporadas</td>
+            <td>Registro_participacion</td>
+            <td><label for="insercion24">
+                <select id="insercion24" name="insercion24">
+                    <option value="permitida">Restringir</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="modificacion24">
+                <select id="modificacion24" name="modificacion24">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="Eliminacion24">
+                <select id="Eliminacion24" name="Eliminacion24">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Grupos</td>
+            <td>Registros</td>
+            <td><label for="insercion25">
+                <select id="insercion25" name="insercion25">
+                    <option value="permitida">Restringir</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="modificacion25">
+                <select id="modificacion25" name="modificacion25">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="Eliminacion25">
+                <select id="Eliminacion25" name="Eliminacion25">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Registros</td>
+            <td>Partidos</td>
+            <td><label for="insercion26">
+                <select id="insercion26" name="insercion26">
+                    <option value="permitida">Restringir</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="modificacion26">
+                <select id="modificacion26" name="modificacion26">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="Eliminacion26">
+                <select id="Eliminacion26" name="Eliminacion26">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Temporadas</td>
+            <td>Traspasos</td>
+            <td><label for="insercion27">
+                <select id="insercion27" name="insercion27">
+                    <option value="permitida">Restringir</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="modificacion27">
+                <select id="modificacion27" name="modificacion27">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+            <td><label for="Eliminacion27">
+                <select id="Eliminacion27" name="Eliminacion27">
+                    <option value="permitida">Restringir</option>
+                    <option value="permitida">Cascada</option>
+                    <option value="denegada">Ignorar</option>
+                </select></td>
+        </tr>
 </table>
-    <a>
+    <a><br>
     </a>
 </body>
 </html>
